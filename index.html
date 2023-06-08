@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake & ladder game</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="left">
+        <h2>PLAYER ONE</h2>
+        <span class="position">Current Position</span>
+        <h1 id="left_position">1</h1>
+        <div>
+          <img src="./4.png" alt="dice" class="diceimg" id="left_dice" />
+        </div>
+        <button class="btn btn_left">Roll die</button>
+      </aside>
+      <main class="middle_container">
+        <div class="middle">
+          <span>100</span>
+          <span>99</span>
+          <span>98</span>
+          <span>97</span>
+          <span>96</span>
+          <span>95</span>
+          <span>94</span>
+          <span>93</span>
+          <span>92</span>
+          <span>91</span>
+          <span>81</span>
+          <span>82</span>
+          <span>83</span>
+          <span>84</span>
+          <span>85</span>
+          <span>86</span>
+          <span>87</span>
+          <span>88</span>
+          <span>89</span>
+          <span>90</span>
+          <span>80</span>
+          <span>79</span>
+          <span>78</span>
+          <span>77</span>
+          <span>76</span>
+          <span>75</span>
+          <span>74</span>
+          <span>73</span>
+          <span>72</span>
+          <span>71</span>
+          <span>61</span>
+          <span>62</span>
+          <span>63</span>
+          <span>64</span>
+          <span>65</span>
+          <span>66</span>
+          <span>67</span>
+          <span>68</span>
+          <span>69</span>
+          <span>70</span>
+          <span>60</span>
+          <span>59</span>
+          <span>58</span>
+          <span>57</span>
+          <span>56</span>
+          <span>55</span>
+          <span>54</span>
+          <span>53</span>
+          <span>52</span>
+          <span>51</span>
+          <span>41</span>
+          <span>42</span>
+          <span>43</span>
+          <span>44</span>
+          <span>45</span>
+          <span>46</span>
+          <span>47</span>
+          <span>48</span>
+          <span>49</span>
+          <span>50</span>
+          <span>40</span>
+          <span>39</span>
+          <span>38</span>
+          <span>37</span>
+          <span>36</span>
+          <span>35</span>
+          <span>34</span>
+          <span>33</span>
+          <span>32</span>
+          <span>31</span>
+          <span>21</span>
+          <span>22</span>
+          <span>23</span>
+          <span>24</span>
+          <span>25</span>
+          <span>26</span>
+          <span>27</span>
+          <span>28</span>
+          <span>29</span>
+          <span>30</span>
+          <span>20</span>
+          <span>19</span>
+          <span>18</span>
+          <span>17</span>
+          <span>16</span>
+          <span>15</span>
+          <span>14</span>
+          <span>13</span>
+          <span>12</span>
+          <span>11</span>
+          <span>START</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+        </div>
+        <!-- snakes -->
+        <div class="green_snake_1 snake">
+          <img src="/3516834.png" alt="snake" class="snake_head" />
+        </div>
+        <div class="green_snake_2 snake">
+          <img src="/3516834.png" alt="snake" class="snake_head" />
+        </div>
+        <div class="green_snake_3 snake">
+          <img src="/3516834.png" alt="snake" class="snake_head" />
+        </div>
+        <div class="green_snake_4 snake">
+          <img src="/3516834.png" alt="snake" class="snake_head" />
+        </div>
+        <div class="green_snake_5 snake">
+          <img src="/3516834.png" alt="snake" class="snake_head" />
+        </div>
+        <div class="green_snake_6 snake">
+          <img src="/3516834.png" alt="snake" class="snake_head" />
+        </div>
+        <div class="green_snake_7 snake">
+          <img src="/3516834.png" alt="snake" class="snake_head" />
+        </div>
+        <!-- ladder -->
+
+        <img
+          src="/Vector-Step-Ladder-Transparent-PNG.png"
+          alt="ladder"
+          class="ladder_1 ladder"
+        />
+        <img
+          src="/Vector-Step-Ladder-Transparent-PNG.png"
+          alt="ladder"
+          class="ladder_2 ladder"
+        />
+        <img
+          src="/Vector-Step-Ladder-Transparent-PNG.png"
+          alt="ladder"
+          class="ladder_3 ladder"
+        />
+        <img
+          src="/Vector-Step-Ladder-Transparent-PNG.png"
+          alt="ladder"
+          class="ladder_4 ladder"
+        />
+        <img
+          src="/Vector-Step-Ladder-Transparent-PNG.png"
+          alt="ladder"
+          class="ladder_5 ladder"
+        />
+        <!-- movers -->
+        <img src="./blue.png" alt="blue" id="blueMover" />
+        <img src="./red.png" alt="red" id="redMover" />
+      </main>
+      <aside class="right">
+        <h2>PLAYER TWO</h2>
+        <span class="position">Current Position</span>
+        <h1 id="right_position">1</h1>
+        <div>
+          <img src="./6.png" alt="dice" class="diceimg" id="right_dice" />
+        </div>
+        <button class="btn btn_right">Roll die</button>
+      </aside>
+      <!-- winner layout -->
+      <div class="winner">
+        <img
+          class="crown"
+          src="https://media.tenor.com/Ggb25MyFi5kAAAAi/crown-royalty.gif"
+          alt="crown"
+        />
+        <img src="" class="player" id="winnerimg" alt="winner" />
+        <h2>WINNER</h2>
+        <button id="restart">RESTART</button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
